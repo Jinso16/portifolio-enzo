@@ -1,0 +1,155 @@
+.tpifs {
+    margin-top: 88px;
+
+    padding-inline: 24px;
+    padding-bottom: 128px;
+
+    >header {
+        padding-block: 128px;
+
+        >a {
+            display: flex;
+            border-radius: 64px;
+
+            width: 80px;
+            height: 48px;
+            max-width: 80px;
+            max-height: 48px;
+
+            background-image: url('../../../assets/ArrowCarousel.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 20%;
+
+            border: 1px solid black;
+
+            filter: invert(100%);
+            opacity: 50%;
+
+            transform: scaleX(-1);
+
+            transition: .5s ease;
+
+            &:hover {
+                background-color: #E5E4E0;
+                filter: invert(0%);
+                opacity: 100%;
+
+                transition: .5s ease;
+            }
+        }
+
+        >h1 {
+            font-size: 120px;
+            line-height: 100%;
+            color: #E5E4E0;
+            font-weight: 400;
+        }
+    }
+
+    >p {
+        font-size: 20px;
+        line-height: 50px;
+        text-align: justify;
+        font-weight: 500;
+        color: #E5E4E0;
+
+        padding-bottom: 128px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    [data-tpifstv-image] {
+        width: 100%;
+        border-radius: 32px;
+        padding-bottom: 128px;
+    }
+
+    .leftTextImage {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+
+        padding-bottom: 128px;
+
+        >p {
+            font-size: 1.4vw;
+            width: 60%;
+            line-height: 60px;
+            text-align: justify;
+        }
+
+        >img {
+            width: 40%;
+            border-radius: 32px;
+        }
+    }
+
+    .phrase {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 48px;
+        padding-inline: 128px;
+        padding-bottom: 128px;
+
+        >h2 {
+            font-size: calc(24px + .8vw);
+            font-weight: 500;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        >svg {
+            width: 10vw;
+            min-width: 114px;
+        }
+    }
+
+    .tripleDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding-bottom: 128px;
+
+        gap: 48px;
+
+        >p {
+            font-size: 1.4vw;
+            line-height: 60px;
+            text-align: justify;
+        }
+
+        >img {
+            border-radius: 32px;
+        }
+    }
+
+    .twoImages {
+        display: flex;
+        gap: 16px;
+        padding-bottom: 128px;
+
+        >img {
+            width: 100%;
+            border-radius: 32px;
+        }
+    }
+
+    .twoTexts {
+        display: flex;
+        gap: 32px;
+        padding-bottom: 128px;
+
+        >p {
+            width: 50%;
+            font-size: 1.4vw;
+            line-height: 60px;
+            text-align: justify;
+        }
+    }
+}

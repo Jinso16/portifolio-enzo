@@ -7,13 +7,28 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+window.addEventListener('load', function() { 
+    const hash = window.location.hash;
+
+    if (hash && hash.length > 1) {
+        const targetElement = document.querySelector(hash);
+
+        if (targetElement) {
+            setTimeout(() => {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth' 
+                });
+            }, 50);
+        } else {
+            console.warn(`Elemento com ID ${hash} não encontrado após o carregamento.`);
+        }
+    }
+});
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

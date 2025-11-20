@@ -54,7 +54,7 @@ export default function PortifolioCarousel() {
                         className={styles.swiperCard}
                         data-slide="2"
                     >
-                        <a href='/videogames'>
+                        <a href='/videogames/the-place-i-feel-safe'>
                             <img src={videogameBanner} alt="Projetos de Videogames" />
                             <h3>VIDEOGAMES</h3>
                         </a>
