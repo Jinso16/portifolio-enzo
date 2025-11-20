@@ -1,0 +1,78 @@
+.machinesWrapper {
+    margin-top: 88px;
+
+    padding-inline: 24px;
+    padding-bottom: 128px;
+
+    >header {
+        padding-block: 128px;
+
+        >a {
+            display: flex;
+            border-radius: 64px;
+
+            width: 80px;
+            height: 48px;
+            max-width: 80px;
+            max-height: 48px;
+
+            background-image: url('../../../assets/ArrowCarousel.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 20%;
+
+            border: 1px solid black;
+
+            filter: invert(100%);
+            opacity: 50%;
+
+            transform: scaleX(-1);
+
+            transition: .5s ease;
+
+            &:hover {
+                background-color: #E5E4E0;
+                filter: invert(0%);
+                opacity: 100%;
+
+                transition: .5s ease;
+            }
+        }
+
+        >h1 {
+            font-size: 120px;
+            line-height: 100%;
+            color: #E5E4E0;
+            font-weight: 400;
+        }
+    }
+
+    >p {
+        font-size: 20px;
+        line-height: 50px;
+        text-align: justify;
+        font-weight: 500;
+        color: #E5E4E0;
+
+        padding-bottom: 128px;
+    }
+
+    .machinesPages {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        justify-content: center;
+        align-items: center;
+
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-user-drag: none;
+
+        >img {
+            height: 90vh;
+        }
+    }
+}

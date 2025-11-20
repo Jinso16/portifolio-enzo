@@ -1,0 +1,85 @@
+.contato {
+    margin-top: 88px;
+
+    padding-inline: 24px;
+    padding-bottom: 128px;
+
+    >header {
+        padding-block: 128px;
+
+        >h1 {
+            font-size: 120px;
+            line-height: 100%;
+            color: #E5E4E0;
+            font-weight: 400;
+        }
+    }
+
+    [data-contacts] {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+
+        [data-top] {
+            width: 100%;
+            display: flex;
+            gap: 16px;
+
+            >a {
+                &:first-of-type {
+                    width: 67%;
+                    height: fit-content;
+                }
+
+                &:last-of-type {
+                    width: 33%;
+                    height: fit-content;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        [data-mid] {
+            width: 100%;
+            display: flex;
+            gap: 16px;
+
+            >a {
+                &:first-of-type {
+                    width: 33%;
+                    height: fit-content;
+                }
+
+                &:last-of-type {
+                    width: 67%;
+                    height: fit-content;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        [data-bottom] {
+            width: 100%;
+            display: flex;
+
+            >a {
+                width: 100%;
+                height: fit-content;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

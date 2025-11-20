@@ -1,0 +1,169 @@
+.portifolioCarouselWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    padding-top: 128px;
+    margin-top: -128px;
+
+    >header {
+        display: flex;
+        flex-direction: column;
+
+        padding-inline: 24px;
+
+        >span {
+            color: #7149E9;
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 400;
+        }
+
+        >h2 {
+            font-size: 60px;
+            line-height: 60px;
+            font-weight: 400;
+        }
+    }
+
+    .swiperContainer {
+        max-width: 100%;
+        padding-left: 24px;
+
+        .swiper {
+            margin-top: -6rem;
+            padding-top: 6rem;
+            padding-bottom: 3rem;
+
+            .swiperCard {
+                height: 70vh !important;
+                overflow: hidden;
+
+                border-radius: 32px;
+
+                position: relative;
+
+                >a {
+                    width: 100%;
+                    height: 100%;
+
+                    text-decoration: none;
+                    
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: top;
+
+                        transition: .3s ease;
+
+                        &:hover {
+                            transform: scale(110%);
+                            transition: .3s ease;
+                        }
+                    }
+
+                    >h3 {
+                        position: absolute;
+                        bottom: 24px;
+                        left: 24px;
+                        z-index: 2;
+
+                        font-size: 24px;
+                        line-height: 28px;
+                        font-weight: 400;
+                        color: white;
+                    }
+                }
+            }
+
+            [data-slide="0"] {
+                width: unset !important;
+                aspect-ratio: 15/19 !important;
+            }
+            [data-slide="1"] {
+                width: unset !important;
+                aspect-ratio: 21/19 !important;
+            }
+            [data-slide="2"] {
+                width: unset !important;
+                aspect-ratio: 15/19 !important;
+
+                >a {
+                    >img {
+                        object-position: bottom;
+                    }
+                }
+            }
+            [data-slide="3"] {
+                width: unset !important;
+                aspect-ratio: 15/19 !important;
+            }
+
+            :global(.swiper-button-prev),
+            :global(.swiper-button-next) {
+                position: absolute;
+                top: 2.5rem;
+
+                background-color: white;
+
+                border-radius: 64px;
+
+                width: 80px;
+                height: 48px;
+                max-width: 80px;
+                max-height: 48px;
+
+                background-image: url('../../../assets/ArrowCarousel.svg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 20%;
+
+                transition: .5s ease;
+
+                >svg {
+                    display: none;
+                }
+            }
+
+            :global(.swiper-button-next) {
+                right: 32px;
+            }
+
+            :global(.swiper-button-prev) {
+                right: 120px;
+                left: unset !important;
+
+                transform: scaleX(-1);
+            }
+
+            :global(.swiper-button-disabled) {
+                background-color: transparent;
+                border: 1px solid black;
+                filter: invert(100%);
+
+                transition: .5s ease;
+            }
+
+            :global(.swiper-pagination) {
+                :global(.swiper-pagination-bullet-active) {
+                    width: 24px !important;
+                    height: 8px;
+                    background: #E5E4E04D !important;
+                    border-radius: 999px;
+
+                    transition: .3s ease;
+                }
+
+                :global(.swiper-pagination-bullet) {
+                    width: 8px;
+                    height: 8px;
+                    background: #161517;
+                    border-radius: 999px;
+
+                    transition: .3s ease;
+                }
+            }
+        }
+    }
+}

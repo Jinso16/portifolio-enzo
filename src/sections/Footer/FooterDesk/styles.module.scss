@@ -1,0 +1,70 @@
+footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 33% 33% 33%;
+
+    padding: 64px 24px;
+
+    >div {
+        &:last-of-type {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        >a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            text-decoration: none;
+            color: white;
+
+            width: fit-content;
+
+            &::after {
+                content: "";
+                width: 12px;
+                height: 12px;
+
+                background-image: url('../../../assets/LinkArrow.svg');
+                background-size: 180%;
+                background-position: center;
+
+                transition: .5s ease;
+            }
+
+            &:hover {
+                &::after {
+                    background-position-x: 18px;
+                    background-position-y: -22px;
+
+                    transition: .5s ease;
+                }
+            }
+        }
+    }
+
+    .resumeLink {
+        justify-content: flex-start;
+    }
+    .emailLink {
+        justify-content: flex-end;
+    }
+
+    >section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+
+        >a {
+            transition: .3s ease;
+            &:hover {
+                transform: scale(110%);
+                transition: .3s ease;
+            }
+        }
+    }
+}
