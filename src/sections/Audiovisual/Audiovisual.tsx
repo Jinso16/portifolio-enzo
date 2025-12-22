@@ -1,12 +1,10 @@
 import styles from './styles.module.scss'
+import PageHeader from '../PageHeader/PageHeader'
 
 export default function Audiovisual() {
     return (
         <section className={styles.audiovisual}>
-            <header>
-                <a href="/"></a>
-                <h1>AUDIOVISUAL</h1>
-            </header>
+            <PageHeader title='AUDIOVISUAL' />
 
             <p>
                 Em projetos audiovisuais, sempre enxerguei o alicerce da narrativa como a prioridade. Acredito firmemente que um <i>storytelling</i> coeso e bem construído é o recurso mais valioso da produção. Independentemente das limitações técnicas ou orçamentárias, é a força do conceito e a excelência da história que sustentam o produto final e definem seu impacto.

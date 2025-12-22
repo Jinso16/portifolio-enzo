@@ -19,7 +19,7 @@ window.addEventListener('load', function() {
                 targetElement.scrollIntoView({
                     behavior: 'smooth' 
                 });
-            }, 50);
+            }, 250);
         } else {
             console.warn(`Elemento com ID ${hash} não encontrado após o carregamento.`);
         }

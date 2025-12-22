@@ -14,6 +14,7 @@ import TerraAVista from './sections/Audiovisual/TerraAVista/TerraAVista';
 import BadDreams from './sections/Audiovisual/BadDreams/BadDreams';
 import TPIFS from './sections/Videogame/TPIFS/TPIFS';
 import Teatro from './sections/Teatro/Teatro';
+import Orian from './sections/Fotografia/Orian/Orian';
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
           {/* FOTOGRAFIA */}
           <Route path='/fotografia' element={<Fotografia />} />
           <Route path='/fotografia/aurora' element={<Aurora />} />
-          <Route path='/fotografia/machines' element={<Machines />} />
+          <Route path='/fotografia/orian' element={<Orian />} />
+          {/* <Route path='/fotografia/machines' element={<Machines />} /> */}
 
           {/* AUDIOVISUAL */}
           <Route path='/audiovisual' element={<Audiovisual />} />

@@ -1,4 +1,5 @@
 import styles from './styles.module.scss'
+import PageHeader from '../../PageHeader/PageHeader'
 
 // import React, { useState } from 'react'
 // import ReactPlayer from 'react-player'
@@ -9,10 +10,7 @@ export default function TerraAVista() {
 
     return (
         <section className={styles.terraVista}>
-            <header>
-                <a href="/audiovisual"></a>
-                <h1>TERRA À VISTA</h1>
-            </header>
+            <PageHeader title='TERRA À VISTA' />
 
             <p>
                 “Terra à Vista” é um curta metragem que aborda uma relação problemática entre dois irmãos que, em meio a problemas familiares, precisam se agarrar um ao outro e às memórias de um passado que eles gostariam que tivesse durado mais tempo.
@@ -31,12 +29,45 @@ export default function TerraAVista() {
             {/* <div onClick={() => setIsPlaying(!isPlaying)}>
                 <ReactPlayer loop={true} playing={isPlaying} style={{aspectRatio: "1/1", width: "100%", height:"unset"}} src={"https://player.vimeo.com/video/1135831273?background=1"}/>
             </div> */}
-            
-            <p>
-                Este foi o projeto de conclusão do Itinerário Formativo no qual me especializei durante o Ensino Médio, Cinema e Produção Audiovisual, e sua materialização me proporcionou uma sensação de dever cumprido. A história acompanha Arthur e Miguel, dois irmãos com personalidades opostas. Miguel é uma criança sonhadora que percebe o mundo como um livro em branco, enquanto Arthur é um adolescente forçado a amadurecer precocemente, mantendo uma relação complicada com o caçula. Essa dinâmica é testada quando a atmosfera familiar se deteriora com a separação dos pais, e os irmãos precisam encontrar um porto seguro não em casa, mas um no outro. O curta conta uma história profunda sobre amor, redenção e memória.
-Minha dedicação a este projeto foi total, não apenas no roteiro e na atuação, mas principalmente na arquitetura detalhada da narrativa, através de uma direção minuciosa que trascendeu aos limites orçamentários e estruturais.
-            </p>
 
+            <div className={styles.leftTextImage}>
+                <p>
+                    Este foi o projeto de conclusão do Itinerário Formativo no qual me especializei durante o Ensino Médio, Cinema e Produção Audiovisual, e sua materialização me proporcionou uma sensação de dever cumprido. A história acompanha Arthur e Miguel, dois irmãos com personalidades opostas. Miguel é uma criança sonhadora que percebe o mundo como um livro em branco, enquanto Arthur é um adolescente forçado a amadurecer precocemente, mantendo uma relação complicada com o caçula.
+                </p>
+
+                <div className={styles.image1}>
+                    <img src="/Audiovisual/TerraVista/terra1.jpg" alt="" />
+                </div>
+            </div>
+
+            <div className={styles.twoImages}>
+                <div className={styles.image1}>
+                    <img src="/Audiovisual/TerraVista/terra2.jpg" alt="" />
+                </div>
+                <div className={styles.image2}>
+                    <img src="/Audiovisual/TerraVista/terra3.jpg" alt="" />
+                </div>
+            </div>
+
+            <div className={styles.twoImagesTextRight}>
+                <div className={styles.images}>
+                    <div className={styles.image1}>
+                        <img src="/Audiovisual/TerraVista/terra4.jpg" alt="" />
+                    </div>
+                    <div className={styles.image2}>
+                        <img src="/Audiovisual/TerraVista/terra5.jpg" alt="" />
+                    </div>
+                </div>
+
+                <p>
+                    Essa dinâmica é testada quando a atmosfera familiar se deteriora com a separação dos pais, e os irmãos precisam encontrar um porto seguro não em casa, mas um no outro. O curta conta uma história profunda sobre amor, redenção e memória.
+                    Minha dedicação a este projeto foi total, não apenas no roteiro e na atuação, mas principalmente na arquitetura detalhada da narrativa, através de uma direção minuciosa que trascendeu aos limites orçamentários e estruturais.
+                </p>
+            </div>
+
+            <div className={styles.poster}>
+                <img src="/Audiovisual/TerraVista/terra-poster.png" alt="" />
+            </div>
         </section>
     )
 }

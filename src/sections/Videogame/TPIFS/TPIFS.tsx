@@ -1,13 +1,11 @@
 import styles from './styles.module.scss'
+import PageHeader from '../../PageHeader/PageHeader'
 
 export default function TPIFS() {
 
     return (
         <section className={styles.tpifs}>
-            <header>
-                <a href="/"></a>
-                <h1>THE PLACE I FEEL SAFE</h1>
-            </header>
+            <PageHeader title='THE PLACE I FEEL SAFE'/>
 
             <p>
                 “The Place I Feel Safe” é, de longe, meu projeto mais ambicioso até hoje. Sempre acreditei que os videogames são o suprassumo da arte contemporânea, por poderem conciliar visuais, narrativa, trilha sonora e mecânica em uma única experiência. Fazer meu próprio jogo parece a materialização de um sonho.

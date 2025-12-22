@@ -1,13 +1,11 @@
 import styles from './styles.module.scss'
+import PageHeader from '../PageHeader/PageHeader'
 
 export default function Teatro() {
 
     return (
         <section className={styles.teatro}>
-            <header>
-                <a href="/"></a>
-                <h1>TEATRO</h1>
-            </header>
+            <PageHeader title='TEATRO' />
 
             <p>
                 O teatro não é apenas uma paixão que me acompanha desde os 12 anos; foi, sobretudo, o meu laboratório prático de storytelling e Direção de Arte. Se os jogos, o cinema ou a literatura exigem histórias previamente planejadas, o palco exige que elas sejam construídas em tempo real, com a complexidade do ao vivo.

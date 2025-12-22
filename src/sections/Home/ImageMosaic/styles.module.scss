@@ -12,6 +12,23 @@
         overflow: hidden;
     }
 
+    .mosaicMid2 {
+        width: 100%;
+        >div {
+            border-radius: 32px;
+            object-fit: cover;  
+            overflow: hidden;
+
+            &:first-child {
+                
+                width: 50%;
+            }
+            &:last-child {
+                width: 50%;
+            }
+        }
+    }
+
     .mosaicMid {
         width: 100%;
         >div {

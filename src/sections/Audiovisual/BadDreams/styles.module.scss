@@ -4,49 +4,6 @@
     padding-inline: 24px;
     //padding-bottom: 128px;
 
-    >header {
-        padding-block: 128px;
-
-        >a {
-            display: flex;
-            border-radius: 64px;
-
-            width: 80px;
-            height: 48px;
-            max-width: 80px;
-            max-height: 48px;
-
-            background-image: url('../../../assets/ArrowCarousel.svg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 20%;
-
-            border: 1px solid black;
-
-            filter: invert(100%);
-            opacity: 50%;
-
-            transform: scaleX(-1);
-
-            transition: .5s ease;
-
-            &:hover {
-                background-color: #E5E4E0;
-                filter: invert(0%);
-                opacity: 100%;
-
-                transition: .5s ease;
-            }
-        }
-
-        >h1 {
-            font-size: 120px;
-            line-height: 100%;
-            color: #E5E4E0;
-            font-weight: 400;
-        }
-    }
-
     >p {
         font-size: 20px;
         line-height: 50px;
@@ -54,7 +11,11 @@
         font-weight: 500;
         color: #E5E4E0;
 
-        padding-bottom: 128px;
+        &:first-of-type {
+            padding-bottom: 128px;
+        }
+
+        padding-bottom: 60px;
     }
 
     a {
@@ -126,5 +87,116 @@
 
             background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 0) 100%);
         }
+    }
+
+    .leftTextImage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 48px;
+
+        padding-bottom: 60px;
+
+        >p {
+            width: 60%;
+            font-size: 1.2vw;
+            line-height: 4.5vw;
+            text-align: justify;
+        }
+
+        .image1 {
+            width: 45%;
+            aspect-ratio: 1.5/1;
+            border-radius: 32px;
+            overflow: hidden;
+
+            >img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .twoImages {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 16px;
+
+        margin-bottom: 60px;
+
+        >div {
+            height: 36vw;
+            width: 100%;
+
+            border-radius: 32px;
+
+            overflow: hidden;
+
+            >img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .image1 {
+            grid-column: span 2 / span 2;
+            //background-color: aqua;
+        }
+
+        .image2 {
+            grid-column-start: 3;
+            //background-color: aqua;
+        }
+    }
+
+    .threeImages {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 16px;
+
+        padding-bottom: 60px;
+
+        >div {
+            border-radius: 32px;
+            overflow: hidden;
+            height: 80vh;
+
+            >img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .img1 {
+            >img {
+                object-position: -700px;
+            }
+        }
+
+        .img2 {
+            grid-column: span 2 / span 2;
+            grid-column-start: 4;
+            grid-row-start: 1;
+
+            background-color: aqua;
+        }
+
+        .img3 {
+            grid-column: span 2 / span 2;
+            grid-column-start: 2;
+            grid-row-start: 1;
+
+            background-color: aqua;
+        }
+    }
+
+    .soloImage {
+        width: 100%;
+        margin-bottom: 128px;
+        border-radius: 32px;
     }
 }
