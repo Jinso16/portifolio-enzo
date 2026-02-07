@@ -1,6 +1,8 @@
 import styles from './styles.module.scss'
 import PageHeader from '../../PageHeader/PageHeader'
 
+import ImageWithModal from '../../ImageWithModal/ImageWithModal'
+
 export default function Machines() {
     return (
         <section className={styles.machinesWrapper}>
@@ -14,7 +16,7 @@ export default function Machines() {
                 {
                     [...Array(3)].map((_, index: number) => {
                         return (
-                            <img src={`/MachinesPages/page${index + 1}.svg`} alt="" />
+                            <ImageWithModal src={`/MachinesPages/page${index + 1}.svg`} alt="" />
                         )
                     })
                 }

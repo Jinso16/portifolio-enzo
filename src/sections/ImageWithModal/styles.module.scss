@@ -1,0 +1,101 @@
+// ImageWithModal.module.scss
+.clickableImage {
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+
+    &:hover {
+        transform: scale(1.02);
+        opacity: 0.9;
+    }
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+
+    padding-top: 24px;
+
+    animation: fadeIn 0.2s ease;
+}
+
+.modalContent {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    animation: scaleIn 0.3s ease;
+}
+
+.modalImage {
+    max-width: 100%;
+    max-height: 90vh;
+
+    min-height: 60vh;
+
+    object-fit: contain;
+    border-radius: 8px;
+
+    position: relative;
+    z-index: 10;
+}
+
+.closeButton {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: black;
+    fill: white;
+    font-size: 24px;
+    width: 16px;
+    height: 16px;
+
+    padding: 8px;
+
+    cursor: pointer;
+
+    border: 2px solid white;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: .5s ease;
+
+    z-index: 5;
+
+    &:hover {
+        fill: black;
+        background-color: white;
+        transition: .5s ease;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

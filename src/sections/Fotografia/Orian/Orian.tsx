@@ -1,6 +1,8 @@
 import styles from './styles.module.scss'
 import PageHeader from '../../PageHeader/PageHeader'
 
+import ImageWithModal from '../../ImageWithModal/ImageWithModal'
+
 export default function Orian() {
     return (
         <section className={styles.orian}>
@@ -12,10 +14,10 @@ export default function Orian() {
 
             <div className={styles.twoImages}>
                 <div className={styles.image1}>
-                    <img src="/Orian/orian1.png" alt="" />
+                    <ImageWithModal src="/Orian/orian1.png" alt="" />
                 </div>
                 <div className={styles.image2}>
-                    <img src="/Orian/orian2.png" alt="" /> 
+                    <ImageWithModal src="/Orian/orian2.png" alt="" /> 
                 </div>
             </div>
 
@@ -23,7 +25,7 @@ export default function Orian() {
                 Minha intenção com esse ensaio foi transmitir a emoção que senti ao conhecer as histórias de cada uma das crianças do projeto. As dez fotos estabelecem uma narrativa de ressignificação do esporte, que se apoia nas relações e estreita laços eternos. 
             </p>
 
-            <img className={styles.soloImage} src="/Orian/orian3.png" alt="" />
+            <ImageWithModal className={styles.soloImage} src="/Orian/orian3.png" alt="" />
 
             <p>
                 Uma das minhas fotos prediletas. Mostro para o professor e ele vira de costas, com certa frieza inesperada. Olho de relance em seguida e ele está enxugando lágrimas. 
@@ -31,16 +33,16 @@ export default function Orian() {
 
             <div className={styles.gridFourImages}>
                 <div className={styles.image1}>
-                    <img src="/Orian/orian4.jpg" alt="" />
+                    <ImageWithModal src="/Orian/orian4.jpg" alt="" />
                 </div>
                 <div className={styles.image2}>
-                    <img src="/Orian/orian5.jpg" alt="" />
+                    <ImageWithModal src="/Orian/orian5.jpg" alt="" />
                 </div>
                 <div className={styles.image3}>
-                    <img src="/Orian/orian6.jpg" alt="" />
+                    <ImageWithModal src="/Orian/orian6.jpg" alt="" />
                 </div>
                 <div className={styles.image4}>
-                    <img src="/Orian/orian7.jpg" alt="" />
+                    <ImageWithModal src="/Orian/orian7.jpg" alt="" />
                 </div>
             </div>
 
@@ -48,7 +50,7 @@ export default function Orian() {
                 Na comunidade, não há distinção. Às vezes, nem mesmo o sapato adequado. Durante a cobertura, um dos professores comenta sobre um aluno que, entristecido, deixou de participar do projeto. Ao ser questionado sobre a saída, explicou que um de seus tios, usuário de drogas, havia vendido seu único tênis - aquele que usava para jogar futebol - para pagar por pílulas e outras substâncias.
             </p>
 
-            <img className={styles.soloImage} src="/Orian/orian8.png" alt="" />
+            <ImageWithModal className={styles.soloImage} src="/Orian/orian8.png" alt="" />
 
             <p>
                 A educação pública brasileira carece de uma estrutura digna para os estudantes. Mesmo assim, para as crianças do projeto, pouco é necessário para transformar a escola em lar. Entendi os momentos de treino como um respiro em meio à realidade cotidiana. Esse é o motivo principal por trás da coloração fria das fotos. Esse é o cenário cru de uma realidade vivida por uma parcela assustadoramente grande da população brasileira. O verdadeiro calor está nas atividades e nos sonhos que, naquele intervalo de tempo, são compartilhados pelo grupo.
@@ -56,10 +58,10 @@ export default function Orian() {
 
             <div className={styles.twoImages}>
                 <div className={styles.image1}>
-                    <img src="/Orian/orian9.jpg" alt="" />
+                    <ImageWithModal src="/Orian/orian9.jpg" alt="" />
                 </div>
                 <div className={styles.image2}>
-                    <img src="/Orian/orian10.jpg" alt="" /> 
+                    <ImageWithModal src="/Orian/orian10.jpg" alt="" /> 
                 </div>
             </div>
 

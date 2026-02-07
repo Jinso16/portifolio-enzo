@@ -37,6 +37,8 @@
             overflow: hidden;
             position: relative;
 
+            cursor: pointer;
+
             &:hover {
                 >img {
                     transform: scale(105%);

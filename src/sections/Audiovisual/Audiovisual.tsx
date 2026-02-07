@@ -1,6 +1,8 @@
 import styles from './styles.module.scss'
 import PageHeader from '../PageHeader/PageHeader'
 
+import ImageWithModal from '../ImageWithModal/ImageWithModal'
+
 export default function Audiovisual() {
     return (
         <section className={styles.audiovisual}>
@@ -13,7 +15,7 @@ export default function Audiovisual() {
             <div className={styles.projectsWrapper}>
                 <a href="/audiovisual/terra-a-vista">
                     <div className={styles.terraVistaWrapper}>
-                        <img src='/Audiovisual/terraVistaImg.png' alt="Projeto Audiovisual: Terra à Vista" />
+                        <ImageWithModal src='/Audiovisual/terraVistaImg.png' alt="Projeto Audiovisual: Terra à Vista" />
                         <h2>TERRA À VISTA</h2>
                         <span>
                             Curta-metragem sobre as dinâmicas familiares e uma relação complexa entre dois irmãos em estágios diferentes da vida
@@ -24,7 +26,7 @@ export default function Audiovisual() {
 
                 <a href="/audiovisual/bad-dreams-in-the-night">
                     <div className={styles.badDreamsWrapper}>
-                        <img src='/Audiovisual/BDITNimg.png' alt="Projeto Audiovisual: Bad Dreams In The Night" />
+                        <ImageWithModal src='/Audiovisual/BDITNimg.png' alt="Projeto Audiovisual: Bad Dreams In The Night" />
                         <h2>BAD DREAMS IN THE NIGHT</h2>
                         <span>
                             Mini curta-metragem melancólico e enigmático baseado na letra de “Wuthering Heights”, de Kate Bush

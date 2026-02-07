@@ -1,12 +1,11 @@
 import styles from './styles.module.scss'
 import PageHeader from '../../PageHeader/PageHeader'
-
-// import React, { useState } from 'react'
-// import ReactPlayer from 'react-player'
+import React, { useState } from 'react'
+import ImageWithModal from '../../ImageWithModal/ImageWithModal'
+import VideoModal from '../../VideoModal/VideoModal'
 
 export default function TerraAVista() {
-
-    //const [isPlaying, setIsPlaying] = useState<boolean>(false)
+    const [isVideoModalOpen, setIsVideoModalOpen] = useState<boolean>(false)
 
     return (
         <section className={styles.terraVista}>
@@ -17,18 +16,19 @@ export default function TerraAVista() {
             </p>
 
             <div className={styles.projectsWrapper}>
-                <a href="">
-                    <div className={styles.terraVistaWrapper}>
-                        <img src='/Audiovisual/terraVistaImg.png' alt="Assista ao projeto Terra à Vista" />
-                        <h2>ASSISTA À "TERRA À VISTA"</h2>
-                        <div className={styles.backgroundGradient} />
-                    </div>
-                </a>
+                <div className={styles.terraVistaWrapper} onClick={() => setIsVideoModalOpen(true)} >
+                    <img src='/Audiovisual/terraVistaImg.png' alt="Assista ao projeto Terra à Vista" />
+                    <h2>ASSISTA À "TERRA À VISTA"</h2>
+                    <div className={styles.backgroundGradient} />
+                </div>
             </div>
 
-            {/* <div onClick={() => setIsPlaying(!isPlaying)}>
-                <ReactPlayer loop={true} playing={isPlaying} style={{aspectRatio: "1/1", width: "100%", height:"unset"}} src={"https://player.vimeo.com/video/1135831273?background=1"}/>
-            </div> */}
+            <VideoModal
+                isOpen={isVideoModalOpen}
+                onClose={() => setIsVideoModalOpen(false)}
+                src="https://drive.google.com/file/d/17SQRyZ02AX0yXEPCdohNvYSqbqYvxJKU/preview"
+                title="Terra à Vista - Curta Metragem"
+            />
 
             <div className={styles.leftTextImage}>
                 <p>
@@ -36,26 +36,26 @@ export default function TerraAVista() {
                 </p>
 
                 <div className={styles.image1}>
-                    <img src="/Audiovisual/TerraVista/terra1.jpg" alt="" />
+                    <ImageWithModal src="/Audiovisual/TerraVista/terra1.jpg" alt="" />
                 </div>
             </div>
 
             <div className={styles.twoImages}>
                 <div className={styles.image1}>
-                    <img src="/Audiovisual/TerraVista/terra2.jpg" alt="" />
+                    <ImageWithModal src="/Audiovisual/TerraVista/terra2.jpg" alt="" />
                 </div>
                 <div className={styles.image2}>
-                    <img src="/Audiovisual/TerraVista/terra3.jpg" alt="" />
+                    <ImageWithModal src="/Audiovisual/TerraVista/terra3.jpg" alt="" />
                 </div>
             </div>
 
             <div className={styles.twoImagesTextRight}>
                 <div className={styles.images}>
                     <div className={styles.image1}>
-                        <img src="/Audiovisual/TerraVista/terra4.jpg" alt="" />
+                        <ImageWithModal src="/Audiovisual/TerraVista/terra4.jpg" alt="" />
                     </div>
                     <div className={styles.image2}>
-                        <img src="/Audiovisual/TerraVista/terra5.jpg" alt="" />
+                        <ImageWithModal src="/Audiovisual/TerraVista/terra5.jpg" alt="" />
                     </div>
                 </div>
 
@@ -66,7 +66,7 @@ export default function TerraAVista() {
             </div>
 
             <div className={styles.poster}>
-                <img src="/Audiovisual/TerraVista/terra-poster.png" alt="" />
+                <ImageWithModal src="/Audiovisual/TerraVista/terra-poster.png" alt="" />
             </div>
         </section>
     )

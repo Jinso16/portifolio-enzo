@@ -5,6 +5,8 @@ import machinesImg from '../../assets/fotografia-machines.jpg'
 
 import PageHeader from '../PageHeader/PageHeader'
 
+import ImageWithModal from '../ImageWithModal/ImageWithModal'
+
 export default function Fotografia() {
     return (
         <section className={styles.fotografiaWrapper}>
@@ -17,7 +19,7 @@ export default function Fotografia() {
             <div className={styles.projectsWrapper}>
                 <a href="/fotografia/aurora">
                     <div className={styles.auroraWrapper}>
-                        <img src={auroraImg} alt="Projeto de Fotografia: Aurora" />
+                        <ImageWithModal src={auroraImg} alt="Projeto de Fotografia: Aurora" />
                         <h2>AURORA</h2>
                         <span>
                             Portfólio fotográfico que aborda o impacto da infância no desenvolvimento humano
@@ -28,7 +30,7 @@ export default function Fotografia() {
 
                 <a href="/fotografia/orian">
                     <div className={styles.orianWrapper}>
-                        <img src={orianImg} alt="Projeto de Fotografia: orian" />
+                        <ImageWithModal src={orianImg} alt="Projeto de Fotografia: orian" />
                         <h2>PROJETO ORIAN</h2>
                         <span>
                             Cobertura fotojornalística que acompanha crianças jogando futebol em uma comunidade
@@ -39,7 +41,7 @@ export default function Fotografia() {
 
                 {/* <a href="/fotografia/machines">
                     <div className={styles.machinesWrapper}>
-                        <img src={machinesImg} alt="Projeto de Fotografia: Machines" />
+                        <ImageWithModal src={machinesImg} alt="Projeto de Fotografia: Machines" />
                         <h2>TRILOGIA MACHINES</h2>
                         <span>
                             Projeto que simula capas de álbuns musicais que satirizam os pecados do homem contemporâneo

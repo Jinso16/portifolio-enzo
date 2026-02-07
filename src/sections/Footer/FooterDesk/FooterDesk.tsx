@@ -12,7 +12,7 @@ export default function FooterDesk() {
             <section className={styles.socialMediaWrapper}>
                 <a target='_blank' href="https://instagram.com/enzoemmer"><InstagramLogo /></a>
                 <a target='_blank' href="https://www.linkedin.com/in/enzo-emmer-6aa958345/"><LinkedinLogo /></a>
-                <a target='_blank' href=""><GithubLogo /></a>
+                <a target='_blank' href="https://github.com/enzoemmer"><GithubLogo /></a>
             </section>
 
             <div>

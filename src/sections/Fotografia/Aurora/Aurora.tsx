@@ -1,5 +1,6 @@
 import styles from './styles.module.scss'
 import PageHeader from '../../PageHeader/PageHeader'
+import ImageWithModal from '../../ImageWithModal/ImageWithModal'
 
 export default function Aurora() {
     return (
@@ -14,7 +15,7 @@ export default function Aurora() {
                 {
                     [...Array(19)].map((_, index: number) => {
                         return (
-                            <img src={`/AuroraPages/page${index + 1}.svg`} alt="" />
+                            <ImageWithModal src={`/AuroraPages/page${index + 1}.svg`} alt="" />
                         )
                     })
                 }
