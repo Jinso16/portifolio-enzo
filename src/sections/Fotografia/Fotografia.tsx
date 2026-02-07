@@ -1,7 +1,7 @@
 import styles from './styles.module.scss'
 import auroraImg from '../../assets/fotografia-aurora.png'
 import orianImg from '../../assets/fotografia-orian.jpg'
-import machinesImg from '../../assets/fotografia-machines.jpg'
+//import machinesImg from '../../assets/fotografia-machines.jpg'
 
 import PageHeader from '../PageHeader/PageHeader'
 

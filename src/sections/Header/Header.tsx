@@ -2,7 +2,7 @@ import useScreenResize from "../../utils/useScreenResize";
 import HeaderDesk from "./HeaderDesk/HeaderDesk";
 
 export default function Header() {
-    const { isMobile, isDesktop } = useScreenResize()
+    const { isDesktop } = useScreenResize()
 
     return (
         <>

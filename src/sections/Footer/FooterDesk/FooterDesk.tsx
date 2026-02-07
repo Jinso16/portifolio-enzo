@@ -4,19 +4,19 @@ export default function FooterDesk() {
     return (
         <footer>
             <div>
-                <a className={styles.resumeLink} href="">
+                <a className={styles.resumeLink} target='_blank' rel="noreferrer" href="/cardsContact/curriculo-enzo-sartor-oss-emmer.pdf">
                     CURRÍCULO
                 </a>
             </div>
 
             <section className={styles.socialMediaWrapper}>
-                <a target='_blank' href="https://instagram.com/enzoemmer"><InstagramLogo /></a>
-                <a target='_blank' href="https://www.linkedin.com/in/enzo-emmer-6aa958345/"><LinkedinLogo /></a>
-                <a target='_blank' href="https://github.com/enzoemmer"><GithubLogo /></a>
+                <a target='_blank' rel="noreferrer" href="https://instagram.com/enzoemmer"><InstagramLogo /></a>
+                <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/enzo-emmer-6aa958345/"><LinkedinLogo /></a>
+                <a target='_blank' rel="noreferrer" href="https://github.com/enzoemmer"><GithubLogo /></a>
             </section>
 
             <div>
-                <a className={styles.emailLink} href="mailto:enzoemmer7@gmail.com">
+                <a className={styles.emailLink} href="mailto:enzoemmer7@gmail.com" target='_blank' rel="noreferrer" >
                     enzoemmer7@gmail.com
                 </a>
             </div>

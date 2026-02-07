@@ -30,7 +30,7 @@ export default function Teatro() {
                 <ImageWithModal src="/Teatro/teatro4.png" alt="" />
 
                 <p>
-                    Em 2022, a peça <a target='_blank' href='https://youtu.be/BLf3IpUtUpA?t=2554'>“Reflexos de uma Nação Gigante pela Própria Natureza”</a> se adequava à temática do centenário da Semana de Arte Moderna no Brasil, tomando como ponto de partida a interpretação e conexão de três obras emblemáticas do movimento modernista no Brasil. A narrativa abordava temas como êxodo rural, direitos trabalhistas e, majoritariamente, o impacto da arte progressista em uma sociedade parcialmente preparada para recebê-la.
+                    Em 2022, a peça <a rel="noreferrer" target='_blank' href='https://youtu.be/BLf3IpUtUpA?t=2554'>“Reflexos de uma Nação Gigante pela Própria Natureza”</a> se adequava à temática do centenário da Semana de Arte Moderna no Brasil, tomando como ponto de partida a interpretação e conexão de três obras emblemáticas do movimento modernista no Brasil. A narrativa abordava temas como êxodo rural, direitos trabalhistas e, majoritariamente, o impacto da arte progressista em uma sociedade parcialmente preparada para recebê-la.
                 </p>
             </div>
 
@@ -40,7 +40,7 @@ export default function Teatro() {
             </div>
 
             <p>
-                O tema do Festival em 2023 foi “Frutos da Revolução”, contemplando momentos históricos que mudaram rumos e definem o presente. A peça <a target='_blank' href='https://youtu.be/dSPBTJBMOvI?t=5351'>“Como nossos pais”</a> retrata a realidade de uma família destruída pela rigidez perversa da Ditadura Militar brasileira, ocorrida de 1964 a 1985. Na história, a memória apagada de um jornalista desaparecido é revivida anos depois por sua filha, que decide buscar uma cura para as feridas da mãe, cuja mente vive até hoje amaldiçoada pelo conservadorismo ditatorial que a tirou de seu amado.
+                O tema do Festival em 2023 foi “Frutos da Revolução”, contemplando momentos históricos que mudaram rumos e definem o presente. A peça <a rel="noreferrer" target='_blank' href='https://youtu.be/dSPBTJBMOvI?t=5351'>“Como nossos pais”</a> retrata a realidade de uma família destruída pela rigidez perversa da Ditadura Militar brasileira, ocorrida de 1964 a 1985. Na história, a memória apagada de um jornalista desaparecido é revivida anos depois por sua filha, que decide buscar uma cura para as feridas da mãe, cuja mente vive até hoje amaldiçoada pelo conservadorismo ditatorial que a tirou de seu amado.
             </p>
 
             <div className={styles.threeImages}>
@@ -51,7 +51,7 @@ export default function Teatro() {
 
             <div className={styles.leftTextImage}>
                 <p>
-                    Em 2024, foram contemplados no CETEC Festival os 150 anos da imigração italiana no Brasil. Tendo como inspiração os Western Spaghetti e as emblemáticas máfias italianas, me despedi do projeto com <a target='_blank' href='https://youtu.be/iKU7HbKjmsQ?t=10660'>“Até que a morte nos separe”</a>, um espetáculo dramático sobre o significado de família. Em meio a uma eleição municipal, três irmãos com objetivos conflitantes são postos à prova em uma atmosfera de corrupção, paixão e morte. Sem escutar a música que toca em seus corações, eles se vêem fadados a um destino repulsivo.
+                    Em 2024, foram contemplados no CETEC Festival os 150 anos da imigração italiana no Brasil. Tendo como inspiração os Western Spaghetti e as emblemáticas máfias italianas, me despedi do projeto com <a target='_blank' rel="noreferrer" href='https://youtu.be/iKU7HbKjmsQ?t=10660'>“Até que a morte nos separe”</a>, um espetáculo dramático sobre o significado de família. Em meio a uma eleição municipal, três irmãos com objetivos conflitantes são postos à prova em uma atmosfera de corrupção, paixão e morte. Sem escutar a música que toca em seus corações, eles se vêem fadados a um destino repulsivo.
                 </p>
 
                 <ImageWithModal src="/Teatro/teatro10.png" alt="" />

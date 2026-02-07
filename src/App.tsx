@@ -7,7 +7,7 @@ import Footer from './sections/Footer/Footer';
 import Home from './sections/Home/Home';
 import Fotografia from './sections/Fotografia/Fotografia';
 import Aurora from './sections/Fotografia/Aurora/Aurora';
-import Machines from './sections/Fotografia/Machines/Machines';
+//import Machines from './sections/Fotografia/Machines/Machines';
 import Contato from './sections/Contato/Contato';
 import Audiovisual from './sections/Audiovisual/Audiovisual';
 import TerraAVista from './sections/Audiovisual/TerraAVista/TerraAVista';

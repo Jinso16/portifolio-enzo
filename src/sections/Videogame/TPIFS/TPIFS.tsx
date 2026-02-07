@@ -83,7 +83,7 @@ export default function TPIFS() {
                 </p>
 
                 <p>
-                    "The Place I Feel Safe" polariza e demonstra minhas habilidades como artista multimídia, mostrando que posso não apenas escrever uma história envolvente, mas também dar-lhe vida através de uma visão artística e técnica. O jogo ainda não foi publicado, mas pode ser <a target='_blank' href='https://lilastra-studio.itch.io/the-place-i-feel-safe'>apoiado aqui</a>.
+                    "The Place I Feel Safe" polariza e demonstra minhas habilidades como artista multimídia, mostrando que posso não apenas escrever uma história envolvente, mas também dar-lhe vida através de uma visão artística e técnica. O jogo ainda não foi publicado, mas pode ser <a target='_blank' rel="noreferrer" href='https://lilastra-studio.itch.io/the-place-i-feel-safe'>apoiado aqui</a>.
                 </p>
             </div>
 

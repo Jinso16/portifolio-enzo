@@ -2,7 +2,7 @@ import useScreenResize from "../../utils/useScreenResize";
 import FooterDesk from "./FooterDesk/FooterDesk";
 
 export default function Footer() {
-    const { isMobile, isDesktop } = useScreenResize()
+    const { isDesktop } = useScreenResize()
 
     return (
         <>
