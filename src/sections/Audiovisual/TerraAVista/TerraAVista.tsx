@@ -7,6 +7,16 @@ import VideoModal from '../../VideoModal/VideoModal'
 export default function TerraAVista() {
     const [isVideoModalOpen, setIsVideoModalOpen] = useState<boolean>(false)
 
+    const openVideoModal = () => {
+        setIsVideoModalOpen(true)
+        document.body.style.overflow = "hidden"
+    }
+
+    const closeVideoModal = () => {
+        setIsVideoModalOpen(false)
+        document.body.style.overflow = ""
+    }
+
     return (
         <section className={styles.terraVista}>
             <PageHeader title='TERRA À VISTA' />
@@ -16,7 +26,7 @@ export default function TerraAVista() {
             </p>
 
             <div className={styles.projectsWrapper}>
-                <div className={styles.terraVistaWrapper} onClick={() => (setIsVideoModalOpen(true), document.body.style.overflow = "hidden")} >
+                <div className={styles.terraVistaWrapper} onClick={openVideoModal} >
                     <img src='/Audiovisual/terraVistaImg.png' alt="Assista ao projeto Terra à Vista" />
                     <h2>ASSISTA À "TERRA À VISTA"</h2>
                     <div className={styles.backgroundGradient} />
@@ -25,7 +35,7 @@ export default function TerraAVista() {
 
             <VideoModal
                 isOpen={isVideoModalOpen}
-                onClose={() => (setIsVideoModalOpen(false), document.body.style.overflow = "")}
+                onClose={closeVideoModal}
                 src="https://drive.google.com/file/d/17SQRyZ02AX0yXEPCdohNvYSqbqYvxJKU/preview"
                 title="Terra à Vista - Curta Metragem"
             />

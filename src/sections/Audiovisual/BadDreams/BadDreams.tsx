@@ -10,6 +10,16 @@ export default function BadDreams() {
 
     const { isMobile } = useScreenResize()
 
+    const openVideoModal = () => {
+        setIsVideoModalOpen(true)
+        document.body.style.overflow = "hidden"
+    }
+
+    const closeVideoModal = () => {
+        setIsVideoModalOpen(false)
+        document.body.style.overflow = ""
+    }
+
     return (
         <section className={styles.badDreams}>
             <PageHeader title='BAD DREAMS<br/>IN THE NIGHT' />
@@ -19,7 +29,7 @@ export default function BadDreams() {
             </p>
 
             <div className={styles.projectsWrapper}>
-                <div className={styles.badDreamsWrapper} onClick={() => (setIsVideoModalOpen(true), document.body.style.overflow = "hidden")}>
+                <div className={styles.badDreamsWrapper} onClick={openVideoModal}>
                     <img src='/Audiovisual/BDITNimg.png' alt="Assista ao projeto Terra à Vista" />
                     <h2>ASSISTA À “BAD DREAMS IN THE NIGHT”</h2>
                     <div className={styles.backgroundGradient} />
@@ -28,7 +38,7 @@ export default function BadDreams() {
 
             <VideoModal
                 isOpen={isVideoModalOpen}
-                onClose={() => (setIsVideoModalOpen(false), document.body.style.overflow = "")}
+                onClose={closeVideoModal}
                 src="https://drive.google.com/file/d/1OcmJaUza6NWcnAaBHkpBN3QUCCWSRjxS/preview"
                 title="Bad Dreams In The Night - Curta Metragem"
             />
