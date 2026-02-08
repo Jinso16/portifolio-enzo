@@ -83,3 +83,37 @@
         }
     }
 }
+
+@media screen and (max-width: 1025px) {
+    .contato {
+        margin-top: 0;
+        padding-bottom: 64px;
+
+        >header {
+            padding-block: 64px;
+            padding-top: 128px;
+
+            >h1 {
+                font-size: 48px;
+            }
+        }
+    }
+
+    [data-contacts] {
+        [data-top] {
+            >a {
+                width: unset !important;
+            }
+        }
+        [data-mid] {
+            >a {
+                width: unset !important;
+            }
+        }
+        [data-bottom] {
+            >a {
+                width: unset !important;
+            }
+        }
+    }
+}

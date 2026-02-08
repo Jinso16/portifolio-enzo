@@ -21,8 +21,6 @@ export default function PortifolioCarousel() {
         isMobile ? (1.5) : 'auto'
     ), [isMobile])
 
-    console.log(slidesPerView)
-
     return (
         <section className={styles.portifolioCarouselWrapper} id='portifolio'>
             <header>

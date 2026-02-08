@@ -2,10 +2,13 @@ import styles from './styles.module.scss'
 import PageHeader from '../../PageHeader/PageHeader'
 import VideoModal from '../../VideoModal/VideoModal'
 import ImageWithModal from '../../ImageWithModal/ImageWithModal'
+import useScreenResize from '../../../utils/useScreenResize'
 import { useState } from 'react'
 
 export default function BadDreams() {
     const [isVideoModalOpen, setIsVideoModalOpen] = useState<boolean>(false)
+
+    const { isMobile } = useScreenResize()
 
     return (
         <section className={styles.badDreams}>
@@ -16,7 +19,7 @@ export default function BadDreams() {
             </p>
 
             <div className={styles.projectsWrapper}>
-                <div className={styles.badDreamsWrapper} onClick={() => setIsVideoModalOpen(true)}>
+                <div className={styles.badDreamsWrapper} onClick={() => (setIsVideoModalOpen(true), document.body.style.overflow = "hidden")}>
                     <img src='/Audiovisual/BDITNimg.png' alt="Assista ao projeto Terra à Vista" />
                     <h2>ASSISTA À “BAD DREAMS IN THE NIGHT”</h2>
                     <div className={styles.backgroundGradient} />
@@ -25,7 +28,7 @@ export default function BadDreams() {
 
             <VideoModal
                 isOpen={isVideoModalOpen}
-                onClose={() => setIsVideoModalOpen(false)}
+                onClose={() => (setIsVideoModalOpen(false), document.body.style.overflow = "")}
                 src="https://drive.google.com/file/d/1OcmJaUza6NWcnAaBHkpBN3QUCCWSRjxS/preview"
                 title="Bad Dreams In The Night - Curta Metragem"
             />
@@ -49,7 +52,7 @@ export default function BadDreams() {
                 </div>
             </div>
 
-            <div className={styles.leftTextImage}>
+            <div className={styles.leftTextImage} style={{ flexDirection: isMobile ? ("column-reverse") : ("row"), paddingBottom: isMobile ? (48) : (undefined) }}>
                 <div className={styles.image1}>
                     <ImageWithModal src="/Audiovisual/BadDreams/bad4.jpg" alt="" />
                 </div>
@@ -64,12 +67,28 @@ export default function BadDreams() {
             </p>
 
             <div className={styles.threeImages}>
-                <div className={styles.img1}>
-                    <ImageWithModal src="/Audiovisual/BadDreams/bad5.jpg" alt="" />
-                </div>
-                <div className={styles.img2}>
-                    <ImageWithModal src="/Audiovisual/BadDreams/bad7.jpg" alt="" />
-                </div>
+                {
+                    isMobile ? (
+                        <div>
+                            <div className={styles.img2} data-div>
+                                <ImageWithModal src="/Audiovisual/BadDreams/bad7.jpg" alt="" />
+                            </div>
+                            <div className={styles.img1} data-div>
+                                <ImageWithModal src="/Audiovisual/BadDreams/bad5.jpg" alt="" />
+                            </div>
+                        </div>
+                    ) : (
+                        <>
+                            <div className={styles.img1}>
+                                <ImageWithModal src="/Audiovisual/BadDreams/bad5.jpg" alt="" />
+                            </div>
+                            <div className={styles.img2}>
+                                <ImageWithModal src="/Audiovisual/BadDreams/bad7.jpg" alt="" />
+                            </div>
+                        </>
+                    )
+                }
+
                 <div className={styles.img3}>
                     <ImageWithModal src="/Audiovisual/BadDreams/bad6.jpg" alt="" />
                 </div>
@@ -80,6 +99,6 @@ export default function BadDreams() {
             </p>
 
             <ImageWithModal className={styles.soloImage} src="/Audiovisual/BDITNimg.png" alt="" />
-        </section>
+        </section >
     )
 }

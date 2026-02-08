@@ -14,7 +14,7 @@
         padding-bottom: 60px;
 
         &:first-of-type {
-            padding-bottom: 128px !important;
+            padding-bottom: 128px;
         }
 
         >a {
@@ -103,6 +103,47 @@
             grid-column: span 2 / span 2;
             grid-row-start: 2;
             background-color: aqua;
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .orian {
+        margin-top: 0;
+        padding-bottom: 64px !important;
+
+        >header {
+            >h1 {
+                font-size: 37px;
+            }
+        }
+
+        >p {
+            font-size: 12px;
+            line-height: 24px;
+            padding-bottom: 32px !important;
+
+            &:first-of-type {
+                padding-bottom: 64px !important;
+            }
+            
+
+            &:last-of-type {
+                padding-bottom: 0 !important;
+            }
+        }
+
+        .twoImages {
+            margin-bottom: 32px;
+        }
+
+        >img {
+            margin-bottom: 32px !important;
+            border-radius: 32px;
+        }
+
+        .gridFourImages {
+            margin-bottom: 32px;
         }
     }
 }

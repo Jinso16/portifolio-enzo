@@ -45,6 +45,8 @@
 
 @media screen and (max-width: 1025px) {
     .pageHeader {
+        padding-top: 96px;
+
         >button {
             width: 44px;
             height: 25px;
@@ -52,7 +54,7 @@
         }
 
         >h1 {
-            font-size: 48px;
+            font-size: min(13vw, 48px);
         }
     }
 }

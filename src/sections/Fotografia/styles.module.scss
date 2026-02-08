@@ -181,3 +181,71 @@
         }
     }
 }
+
+@media screen and (max-width: 1025px) {
+    .fotografiaWrapper {
+        margin-top: 0;
+        padding-bottom: 64px;
+
+        >p {
+            font-size: 12px;
+            line-height: 24px;
+            padding-bottom: 64px;
+        }
+
+        .projectsWrapper {
+            .auroraWrapper {
+                aspect-ratio: unset !important;
+
+                >img {
+                    transform: scale(1.1);
+                }
+
+                >h2 {
+                    font-size: 14px;
+                    line-height: 28px;
+
+                    bottom: 15vw;
+                    left: 20px;
+                }
+
+                >span {
+                    font-size: min(3vw, 12px);
+                    line-height: 24px;
+
+                    width: 90%;
+
+                    left: 20px;
+                    bottom: 12px;
+                }
+            }
+
+            .orianWrapper {
+                aspect-ratio: unset !important;
+                width: 100%;
+
+                >img {
+                    transform: scale(1.1);
+                }
+
+                >h2 {
+                    font-size: 14px;
+                    line-height: 28px;
+
+                    bottom: 15vw;
+                    left: 20px;
+                }
+
+                >span {
+                    font-size: min(3vw, 12px);
+                    line-height: 24px;
+
+                    width: 90%;
+
+                    left: 20px;
+                    bottom: 12px;
+                }
+            }
+        }
+    }
+}

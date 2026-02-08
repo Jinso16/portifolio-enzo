@@ -155,7 +155,7 @@
     }
 
     .twoImagesTextRight {
-        display: flex ;
+        display: flex;
         align-items: center;
         gap: 24px;
         margin-bottom: 60px;
@@ -174,7 +174,7 @@
 
                 border-radius: 32px;
 
-                > img {
+                >img {
                     width: 100%;
                     object-fit: cover;
                     object-position: 0 -52px;
@@ -188,7 +188,7 @@
 
                 border-radius: 32px;
 
-                > img {
+                >img {
                     width: 100%;
                     object-fit: cover;
                     transform: scale(1.2);
@@ -213,6 +213,89 @@
 
         >img {
             height: 150vh;
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .terraVista {
+        margin-top: 0;
+        padding-bottom: 0;
+
+        >p {
+            font-size: 12px;
+            line-height: 24px;
+
+            &:first-of-type {
+                padding-bottom: 64px !important;
+            }
+        }
+
+        .projectsWrapper {
+            padding-bottom: 64px;
+
+            .terraVistaWrapper {
+                aspect-ratio: 16/9;
+
+                >h2 {
+                    font-size: 12px;
+                    line-height: 24px;
+
+                    left: 24px;
+                    bottom: 12px;
+                }
+            }
+        }
+
+        .leftTextImage {
+            flex-direction: column;
+            padding-bottom: 16px;
+
+            >p {
+                width: 100%;
+                font-size: 12px;
+                line-height: 24px;
+            }
+
+            .image1 {
+                width: 100%;
+                
+                >img {
+                    width: 100%;
+                    object-position: unset !important;
+                }
+            }
+        }
+
+        .twoImagesTextRight {
+            flex-direction: column-reverse;
+
+            >p {
+                width: 100%;
+                font-size: 12px;
+                line-height: 24px;
+            }
+
+            .images {
+                width: 100%;
+
+                >div {
+                    aspect-ratio: 87/47 !important;
+
+                    >img {
+                        object-position: unset !important;
+                    }
+                }
+            }
+        }
+
+        .poster {
+            margin-bottom: 64px;
+
+            >img {
+                height: unset !important;
+                width: 100%;
+            }
         }
     }
 }

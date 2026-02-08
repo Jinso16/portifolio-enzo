@@ -33,3 +33,23 @@
         }
     }
 }
+
+@media screen and (max-width: 1025px) {
+    .auroraWrapper {
+        margin-top: 0;
+        padding-bottom: 64px;
+
+        >p {
+            font-size: 12px;
+            line-height: 24px;
+            padding-bottom: 64px;
+        }
+
+        .auroraPages {
+            >img {
+                height: unset;
+                width: 90%;
+            }
+        }
+    }
+}

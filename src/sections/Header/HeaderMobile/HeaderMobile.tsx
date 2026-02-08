@@ -8,6 +8,8 @@ function HeaderMobile() {
     const [menuOpen, setMenuOpen] = useState<boolean>(false)
     const { menuSelected, setMenuSelected } = useHeaderState()
 
+    const isHome = window.location.pathname === "/"
+
     const handleMenuOpen = useCallback(() => {
         setMenuOpen(true)
         document.body.style.overflow = "hidden"
@@ -35,7 +37,7 @@ function HeaderMobile() {
                 targetElement.scrollIntoView({
                     behavior: 'smooth',
                     block: 'start',
-                    
+
                 })
             }
 
@@ -54,8 +56,17 @@ function HeaderMobile() {
     }, [setMenuSelected])
 
     return (
-        <header className={styles.headerWrapper} onClick={handleMenuOpen}>
-            <MenuIcon />
+        <header
+            className={styles.headerWrapper}
+            data-is-home={isHome}
+        >
+            {
+                !isHome &&
+                <a href="/">ENZO EMMER</a>
+            }
+            <div onClick={handleMenuOpen}>
+                <MenuIcon />
+            </div>
 
             {
                 menuOpen &&

@@ -16,7 +16,7 @@ export default function TerraAVista() {
             </p>
 
             <div className={styles.projectsWrapper}>
-                <div className={styles.terraVistaWrapper} onClick={() => setIsVideoModalOpen(true)} >
+                <div className={styles.terraVistaWrapper} onClick={() => (setIsVideoModalOpen(true), document.body.style.overflow = "hidden")} >
                     <img src='/Audiovisual/terraVistaImg.png' alt="Assista ao projeto Terra à Vista" />
                     <h2>ASSISTA À "TERRA À VISTA"</h2>
                     <div className={styles.backgroundGradient} />
@@ -25,7 +25,7 @@ export default function TerraAVista() {
 
             <VideoModal
                 isOpen={isVideoModalOpen}
-                onClose={() => setIsVideoModalOpen(false)}
+                onClose={() => (setIsVideoModalOpen(false), document.body.style.overflow = "")}
                 src="https://drive.google.com/file/d/17SQRyZ02AX0yXEPCdohNvYSqbqYvxJKU/preview"
                 title="Terra à Vista - Curta Metragem"
             />
