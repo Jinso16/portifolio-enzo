@@ -51,7 +51,7 @@ function HeaderMobile() {
         } else {
             window.location.href = href
         }
-    }, [])
+    }, [setMenuSelected])
 
     return (
         <header className={styles.headerWrapper} onClick={handleMenuOpen}>
