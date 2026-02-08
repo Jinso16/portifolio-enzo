@@ -70,3 +70,36 @@
         }
     }
 }
+
+@media screen and (max-width: 1025px) {
+    .homeWrapper {
+        padding-top: 0;
+
+        .mainBannerContainer {
+            height: 40vh;
+
+            .imageShadow {
+                bottom: 14.7vh !important;
+            }
+
+            .textContainer {
+                align-items: center;
+                bottom: 6vh;
+
+                width: 100% !important;
+
+                gap: 8px;
+
+                >h1 {
+                    font-size: 14px;
+                }
+
+                >p {
+                    font-size: 12px;
+                    max-width: 70%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

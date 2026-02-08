@@ -219,7 +219,7 @@
 
 
         >p {
-            width: 50%;
+            width: calc(50% - 16px);
             font-size: 1.4vw;
             line-height: 60px;
             text-align: justify;

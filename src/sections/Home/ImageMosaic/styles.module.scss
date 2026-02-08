@@ -14,15 +14,17 @@
 
     .mosaicMid2 {
         width: 100%;
+
         >div {
             border-radius: 32px;
-            object-fit: cover;  
+            object-fit: cover;
             overflow: hidden;
 
             &:first-child {
-                
+
                 width: 50%;
             }
+
             &:last-child {
                 width: 50%;
             }
@@ -31,11 +33,13 @@
 
     .mosaicMid {
         width: 100%;
+
         >div {
             &:first-child {
                 aspect-ratio: 101/58;
                 width: 67%;
             }
+
             &:last-child {
                 aspect-ratio: 25/29;
                 width: 33%;
@@ -45,11 +49,13 @@
 
     .mosaicBottom {
         width: 100%;
-         >div {
+
+        >div {
             &:first-child {
                 aspect-ratio: 25/29;
                 width: 33%;
             }
+
             &:last-child {
                 aspect-ratio: 101/58;
                 width: 67%;
@@ -61,5 +67,33 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .imageMosaicWrapper {
+        padding-top: 64px;
+
+        gap: 20px;
+
+        img {
+            border-radius: 32px;
+        }
+
+        >div {
+            gap: 12px;
+        }
+
+        .mosaicMid {
+            >div:first-child {
+                border-radius: 32px;
+                overflow: hidden;
+                aspect-ratio: unset !important;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
     }
 }

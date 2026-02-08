@@ -10,7 +10,19 @@ import audiovisualBanner from '../../../assets/audiovisual-banner.png'
 import videogameBanner from '../../../assets/videogame-banner.jpg'
 import teatroBanner from '../../../assets/teatro-banner.jpg'
 
+import useScreenResize from '../../../utils/useScreenResize';
+import { useMemo } from 'react';
+
 export default function PortifolioCarousel() {
+
+    const { isMobile } = useScreenResize()
+
+    const slidesPerView = useMemo(() => (
+        isMobile ? (1.5) : 'auto'
+    ), [isMobile])
+
+    console.log(slidesPerView)
+
     return (
         <section className={styles.portifolioCarouselWrapper} id='portifolio'>
             <header>
@@ -20,7 +32,7 @@ export default function PortifolioCarousel() {
 
             <div className={styles.swiperContainer}>
                 <Swiper
-                    slidesPerView={'auto'}
+                    slidesPerView={slidesPerView}
                     spaceBetween={16}
                     pagination={{
                         clickable: true

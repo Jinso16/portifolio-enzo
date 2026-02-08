@@ -48,7 +48,7 @@
                     height: 100%;
 
                     text-decoration: none;
-                    
+
                     img {
                         width: 100%;
                         height: 100%;
@@ -77,27 +77,32 @@
                 }
             }
 
-            [data-slide="0"] {
-                width: unset !important;
-                aspect-ratio: 15/19 !important;
-            }
-            [data-slide="1"] {
-                width: unset !important;
-                aspect-ratio: 21/19 !important;
-            }
-            [data-slide="2"] {
-                width: unset !important;
-                aspect-ratio: 15/19 !important;
+            @media screen and (min-width: 1025px) {
+                [data-slide="0"] {
+                    width: unset !important;
+                    aspect-ratio: 15/19 !important;
+                }
 
-                >a {
-                    >img {
-                        object-position: bottom;
+                [data-slide="1"] {
+                    width: unset !important;
+                    aspect-ratio: 21/19 !important;
+                }
+
+                [data-slide="2"] {
+                    width: unset !important;
+                    aspect-ratio: 15/19 !important;
+
+                    >a {
+                        >img {
+                            object-position: bottom;
+                        }
                     }
                 }
-            }
-            [data-slide="3"] {
-                width: unset !important;
-                aspect-ratio: 15/19 !important;
+
+                [data-slide="3"] {
+                    width: unset !important;
+                    aspect-ratio: 15/19 !important;
+                }
             }
 
             :global(.swiper-button-prev),
@@ -164,6 +169,64 @@
                     transition: .3s ease;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .portifolioCarouselWrapper {
+        >header {
+            >span {
+                color: #7149E9;
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 400;
+            }
+
+            >h2 {
+                font-size: 24px;
+                line-height: 24px;
+                font-weight: 400;
+            }
+        }
+
+        .swiperContainer {
+
+            .swiper {
+                padding-top: 5.5rem;
+
+                :global(.swiper-button-next),
+                :global(.swiper-button-prev) {
+                    top: 3.5rem;
+
+                    width: 44px;
+                    height: 27px;
+                    background-size: 40%;
+                }
+
+                :global(.swiper-button-next) {
+                    right: 24px;
+                }
+
+                :global(.swiper-button-prev) {
+                    right: 72px;
+                    left: unset !important;
+
+                    transform: scaleX(-1);
+                }
+
+                .swiperCard {
+                    width: none !important;
+                    aspect-ratio: 15/19 !important;
+                    height: unset !important;
+
+                    h3 {
+                        font-size: 16px !important;
+                        bottom: 16px !important;
+                    }
+                }
+            }
+
         }
     }
 }

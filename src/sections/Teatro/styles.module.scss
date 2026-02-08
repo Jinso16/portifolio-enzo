@@ -181,3 +181,139 @@
         }
     }
 }
+
+@media screen and (max-width: 1025px) {
+    .teatro {
+        margin-top: 0;
+        padding-bottom: 64px;
+
+        >p {
+            font-size: 12px;
+            line-height: 24px;
+            padding-bottom: 16px;
+
+            &:first-of-type {
+                padding-bottom: 16px !important;
+            }
+        }
+
+        img {
+            border-radius: 32px;
+        }
+
+        .twoImages {
+            gap: 12px;
+            padding-bottom: 16px;
+
+            &:first-of-type {
+                >img {
+                    &:first-of-type {
+                        width: calc(60% - 6px);
+                    }
+
+
+                    &:last-of-type {
+                        width: calc(40% - 6px);
+                    }
+                }
+            }
+
+            >img {
+
+                &:first-of-type {
+                    width: calc(67% - 6px);
+                }
+
+
+                &:last-of-type {
+                    width: calc(33% - 6px);
+                }
+            }
+        }
+
+        .leftTextImage {
+            flex-direction: column-reverse;
+            gap: 16px;
+            
+            padding-bottom: 16px;
+
+            >img {
+                width: 100%;
+            }
+
+            >p {
+                font-size: 12px;
+                width: 100%;
+                line-height: 24px;
+            }
+        }
+
+        .rightTextImage {
+            flex-direction: column;
+            gap: 16px;
+
+            >img {
+                width: 100%;
+            }
+
+            >p {
+                font-size: 12px;
+                width: 100%;
+                line-height: 24px;
+            }
+        }
+
+        .threeImages {
+            padding-bottom: 16px;
+            gap: 12px;
+
+            >img {
+                width: calc(37% - 4px);
+
+                &:first-of-type {
+                    width: calc(22% - 4px);
+                }
+
+                &:last-of-type {
+                    width: calc(40% - 4px);
+                }
+            }
+        }
+
+        .twoImagesReverse {
+            gap: 12px;
+            
+            >img {
+                &:first-of-type {
+                    width: calc(40% - 6px);
+                }
+
+                &:last-of-type {
+                    width: calc(60% - 6px);
+                }
+            }
+        }
+
+        .lastMessage {
+            aspect-ratio: unset;
+            margin-bottom: 8px;
+
+            >img {
+                object-position: 0 18px;
+                transform: scale(2.1);
+            }
+
+            >h3 {
+                font-size: 12px;
+                line-height: 24px;
+                text-align: justify;
+
+                top: 16px;
+            }
+
+            .background {
+                background: #000000B2;
+            }
+        }
+    }
+}

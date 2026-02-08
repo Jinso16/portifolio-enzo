@@ -4,8 +4,12 @@ import PortifolioCarousel from './PortifolioCarousel/PortifolioCarousel'
 import ImageMosaic from './ImageMosaic/ImageMosaic'
 import AboutMe from './AboutMe/AboutMe'
 import SoftSkills from './SoftSkills/SoftSkills'
+import useScreenResize from '../../utils/useScreenResize'
 
 export default function Home() {
+
+    const { isMobile } = useScreenResize()
+
     return (
         <section className={styles.homeWrapper} id='inicio'>
             <div className={styles.mainBannerContainer}>
@@ -14,7 +18,7 @@ export default function Home() {
 
                 <div className={styles.textContainer}>
                     <h1>Olá, me chamo <span>Enzo.</span></h1>
-                    <p>Sou um Diretor de Arte, atualmente estudante de Comunicação Social.</p>
+                    <p>Sou um Diretor de Arte, {isMobile&&<br/>}atualmente estudante de Comunicação.</p>
                 </div>
             </div>
 

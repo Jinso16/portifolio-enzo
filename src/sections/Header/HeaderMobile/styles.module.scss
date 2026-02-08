@@ -1,0 +1,135 @@
+.headerWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 20;
+
+    >svg {
+        padding: 10px 8px;
+        background-color: rgb(0, 0, 0, .6);
+
+        border-radius: 4px;
+
+        position: absolute;
+        right: 32px;
+        top: 32px;
+    }
+
+    [data-menu] {
+        position: fixed;
+        right: 0;
+        top: 0;
+
+        z-index: 19;
+
+        height: 100vh;
+        width: 70%;
+
+        padding: 24px;
+
+        background-color: #0B0B0B;
+
+        animation: slideIn 0.3s ease-in-out forwards;
+
+        &[data-is-closing="true"] {
+            animation: slideOut 0.3s ease-in-out forwards;
+        }
+
+        [data-menu-header] {
+
+            [data-menu-header-title] {
+                font-family: Poppins;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 20px;
+                line-height: 18px;
+                letter-spacing: 0%;
+                text-transform: capitalize;
+                color: #E5E4E0;
+            }
+
+            [data-menu-header-role] {
+                font-family: Poppins;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: 0%;
+                text-transform: capitalize;
+                color: #7149E9;
+            }
+
+            [data-close-button] {
+                position: absolute;
+                right: 24px;
+                top: 24px;
+            }
+        }
+
+        [data-menu-options] {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            margin-top: 48px;
+
+            >span {
+                font-size: 14px;
+                color: #F7F7F8B2;
+
+                &[data-selected="true"] {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 8px;
+
+                    color: #FFFFFF;
+
+                    &::before {
+                        content: "";
+
+                        display: block;
+                        height: 8px;
+                        width: 8px;
+                        background-color: #FFFFFF80;
+                        
+                        border-radius: 999px;
+                    }
+                }
+            }
+        }
+    }
+
+    [data-overlay] {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+
+        background-color: rgb(0, 0, 0, .6);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}

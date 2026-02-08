@@ -1,5 +1,5 @@
 .pageHeader {
-    padding-block: 128px;
+    padding-block: 64px;
 
     >button {
         display: flex;
@@ -40,5 +40,19 @@
         line-height: 100%;
         color: #E5E4E0;
         font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .pageHeader {
+        >button {
+            width: 44px;
+            height: 25px;
+            background-size: 40%;
+        }
+
+        >h1 {
+            font-size: 48px;
+        }
     }
 }

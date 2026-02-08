@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 import styles from './styles.module.scss'
 
 interface ImageWithModalProps {
@@ -13,21 +13,31 @@ export default function ImageWithModal({ src, alt, className = '' }: ImageWithMo
     const openModal = () => setIsModalOpen(true)
     const closeModal = () => setIsModalOpen(false)
 
+    const handleOpenModal = useCallback(() => {
+        openModal()
+        document.body.style.overflow = 'hidden'
+    }, [])
+
+    const handleCloseModal = useCallback(() => {
+        closeModal()
+        document.body.style.overflow = ''
+    }, [])
+
     return (
         <>
             <img
                 src={src}
                 alt={alt}
                 className={`${styles.clickableImage} ${className}`}
-                onClick={openModal}
+                onClick={handleOpenModal}
             />
 
             {isModalOpen && (
-                <div className={styles.modalOverlay} onClick={closeModal}>
+                <div className={styles.modalOverlay} onClick={handleCloseModal}>
                     <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
                         <svg
                             className={styles.closeButton}
-                            onClick={closeModal}
+                            onClick={handleCloseModal}
                             aria-label="Fechar modal"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="512" height="512"
                         >

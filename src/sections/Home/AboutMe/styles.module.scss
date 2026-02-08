@@ -49,3 +49,43 @@
         }
     }
 }
+
+@media screen and (max-width: 1025px) {
+    .aboutMeWrapper {
+        gap: 20px;
+        padding-top: 64px;
+
+        >header {
+            >span {
+                color: #7149E9;
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 400;
+            }
+
+            >h2 {
+                font-size: 24px;
+                line-height: 24px;
+                font-weight: 400;
+            }
+        }
+
+        .aboutMeContent {
+            flex-direction: column;
+
+            >p {
+                width: 100%;
+                font-size: 12px;
+                color: #E5E4E0CC;
+            }
+
+            .imagesWrapper {
+                width: 100% !important;
+
+                >img {
+                    width: calc(33.33% - 5px);
+                }
+            }
+        }
+    }
+}

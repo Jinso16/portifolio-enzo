@@ -1,19 +1,45 @@
 import styles from './styles.module.scss'
+import useScreenResize from '../../../utils/useScreenResize'
 
 export default function FooterDesk() {
+
+    const { isMobile } = useScreenResize()
+
     return (
         <footer>
-            <div>
-                <a className={styles.resumeLink} target='_blank' rel="noreferrer" href="/cardsContact/curriculo-enzo-sartor-oss-emmer.pdf">
-                    CURRÍCULO
-                </a>
-            </div>
+            {
+                !isMobile &&
+                <>
+                    <div>
+                        <a className={styles.resumeLink} target='_blank' rel="noreferrer" href="/cardsContact/curriculo-enzo-sartor-oss-emmer.pdf">
+                            CURRÍCULO
+                        </a>
+                    </div>
 
-            <section className={styles.socialMediaWrapper}>
-                <a target='_blank' rel="noreferrer" href="https://instagram.com/enzoemmer"><InstagramLogo /></a>
-                <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/enzo-emmer-6aa958345/"><LinkedinLogo /></a>
-                <a target='_blank' rel="noreferrer" href="https://github.com/enzoemmer"><GithubLogo /></a>
-            </section>
+                    <section className={styles.socialMediaWrapper}>
+                        <a target='_blank' rel="noreferrer" href="https://instagram.com/enzoemmer"><InstagramLogo /></a>
+                        <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/enzo-emmer-6aa958345/"><LinkedinLogo /></a>
+                        <a target='_blank' rel="noreferrer" href="https://github.com/enzoemmer"><GithubLogo /></a>
+                    </section>
+                </>
+            }
+
+            {
+                isMobile &&
+                <>
+                    <section className={styles.socialMediaWrapper}>
+                        <a target='_blank' rel="noreferrer" href="https://instagram.com/enzoemmer"><InstagramLogo /></a>
+                        <a target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/enzo-emmer-6aa958345/"><LinkedinLogo /></a>
+                        <a target='_blank' rel="noreferrer" href="https://github.com/enzoemmer"><GithubLogo /></a>
+                    </section>
+
+                    <div>
+                        <a className={styles.resumeLink} target='_blank' rel="noreferrer" href="/cardsContact/curriculo-enzo-sartor-oss-emmer.pdf">
+                            CURRÍCULO
+                        </a>
+                    </div>
+                </>
+            }
 
             <div>
                 <a className={styles.emailLink} href="mailto:enzoemmer7@gmail.com" target='_blank' rel="noreferrer" >
